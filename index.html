@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UCLM Racing Team</title>
+
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header id="navbar">
+  <div class="logo"><span class="logo-red">UCLM</span> RACING</div>
+
+  <nav class="nav-links">
+    <a href="#about">Equipo</a>
+    <a href="#car">Monoplaza</a>
+    <a href="#races">Competición</a>
+    <a href="#sponsors">Partners</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+
+  <a class="nav-cta" href="#sponsors">Patrocina</a>
+</header>
+
+<section class="hero">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1>ENGINEERED FOR SPEED</h1>
+    <p>UCLM Racing Team · Formula Student</p>
+    <a href="#races" class="hero-btn">Ver competiciones</a>
+  </div>
+</section>
+
+<section id="about" class="section reveal compact">
+  <h2>NUESTRO EQUIPO</h2>
+  <p>Equipo universitario de ingeniería enfocado en el diseño y competición de monoplazas en Formula Student.</p>
+</section>
+
+<section id="car" class="section dark reveal compact">
+  <h2>MONOPLAZA</h2>
+
+  <div class="car-layout">
+    <div>
+      <p class="big-text">Ingeniería al límite del rendimiento.</p>
+    </div>
+
+    <div class="car-stats">
+      <div><span>250kg</span><p>Peso</p></div>
+      <div><span>80CV</span><p>Potencia</p></div>
+      <div><span>4s</span><p>0-100</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="races" class="section reveal compact">
+  <h2>COMPETICIONES</h2>
+
+  <div class="races-grid">
+
+    <div class="race-card">
+      <h3>Formula Student Portugal</h3>
+      <p>19 Julio 2026</p>
+      <div class="countdown">
+        <div><span id="daysPT">00</span><p>D</p></div>
+        <div><span id="hoursPT">00</span><p>H</p></div>
+        <div><span id="minPT">00</span><p>M</p></div>
+        <div><span id="secPT">00</span><p>S</p></div>
+      </div>
+    </div>
+
+    <div class="race-card highlight">
+      <h3>Formula Student Spain</h3>
+      <p>1 Agosto 2026</p>
+      <div class="countdown">
+        <div><span id="daysES">00</span><p>D</p></div>
+        <div><span id="hoursES">00</span><p>H</p></div>
+        <div><span id="minES">00</span><p>M</p></div>
+        <div><span id="secES">00</span><p>S</p></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="sponsors" class="section dark reveal compact">
+  <h2>PARTNERS</h2>
+
+  <div class="sponsors">
+    <div class="tier gold">
+      <h3>GOLD</h3>
+      <div class="logos big">
+        <div>LOGO</div><div>LOGO</div><div>LOGO</div>
+      </div>
+    </div>
+
+    <div class="tier silver">
+      <h3>SILVER</h3>
+      <div class="logos medium">
+        <div>LOGO</div><div>LOGO</div><div>LOGO</div><div>LOGO</div>
+      </div>
+    </div>
+
+    <div class="tier bronze">
+      <h3>BRONZE</h3>
+      <div class="logos small">
+        <div>LOGO</div><div>LOGO</div><div>LOGO</div><div>LOGO</div><div>LOGO</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section reveal compact">
+  <h2>CONTACTO</h2>
+
+  <form>
+    <input type="text" placeholder="Nombre" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 UCLM Racing Team</p>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
