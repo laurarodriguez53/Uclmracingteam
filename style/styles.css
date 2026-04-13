@@ -53,6 +53,45 @@ body {
 
 .nav-links a:hover { color: white; }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.9);
+  min-width: 180px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  padding: 12px 0;
+  z-index: 1001;
+  border-radius: 5px;
+  border: 1px solid #b30033;
+  top: 100%;
+  left: 0;
+  margin-top: 0;
+}
+
+.dropdown-menu a {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.dropdown-menu a:hover {
+  background: #b30033;
+  color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 .nav-cta {
   padding: 10px 16px;
   border: 1px solid #b30033;
@@ -183,7 +222,13 @@ body {
 
 .logos {
   display: flex;
-  gap: 10px;
+  gap: 20px 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.logos:last-child {
+  margin-bottom: 0;
 }
 
 .logos div {
@@ -191,10 +236,21 @@ body {
   flex: 1;
   padding: 35px;
   text-align: center;
+  max-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.medium div { padding: 30px; }
-.small div { padding: 22px; }
+.logos img {
+  max-width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+}
+
+.medium div { padding: 30px; max-height: 120px; }
+.small div { padding: 22px; max-height: 100px; }
 
 /* FORM */
 input, textarea {
