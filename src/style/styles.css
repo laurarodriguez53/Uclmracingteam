@@ -63,7 +63,7 @@ body {
 /* HERO */
 .hero {
   height: 100vh;
-  background: url("../images/DSC_0134.JPG") center/cover no-repeat;
+  background: url("../../images/DSC_0134.JPG") center/cover no-repeat;
   position: relative;
 }
 
