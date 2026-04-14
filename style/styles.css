@@ -233,7 +233,8 @@ body {
 
 .logos div {
   background: #111;
-  flex: 1;
+  flex: 1 1 260px;
+  min-width: 220px;
   padding: 35px;
   text-align: center;
   max-height: 150px;
@@ -293,5 +294,20 @@ section[id] {
   .car-layout {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .logos {
+    flex-direction: column;
+  }
+
+  .logos div {
+    width: 100%;
+    min-width: 0;
+    max-height: none;
+  }
+
+  .logos img {
+    max-width: 80%;
+    max-height: 110px;
   }
 }
