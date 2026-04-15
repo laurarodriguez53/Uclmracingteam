@@ -32,6 +32,7 @@ body {
 }
 
 .logo {
+  display: block;
   background: url("../../images/logo_UCLM-RacingTeam (white).png") center/contain no-repeat;
   width: 130px;
   height: 40px;
@@ -224,6 +225,7 @@ body {
   display: flex;
   gap: 20px 10px;
   flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
@@ -233,8 +235,8 @@ body {
 
 .logos div {
   background: #111;
-  flex: 1 1 260px;
-  min-width: 220px;
+  flex: 0 1 260px;
+  width: 260px;
   padding: 35px;
   text-align: center;
   max-height: 150px;
@@ -248,6 +250,39 @@ body {
   max-width: 100%;
   max-height: 120px;
   object-fit: contain;
+}
+
+.gold .logos div {
+  flex: 0 1 320px;
+  width: 320px;
+  padding: 40px;
+  max-height: 170px;
+}
+
+.gold .logos img {
+  max-height: 135px;
+}
+
+.silver .logos div {
+  flex: 0 1 220px;
+  width: 220px;
+  padding: 28px;
+  max-height: 130px;
+}
+
+.silver .logos img {
+  max-height: 105px;
+}
+
+.bronze .logos div {
+  flex: 0 1 170px;
+  width: 170px;
+  padding: 22px;
+  max-height: 110px;
+}
+
+.bronze .logos img {
+  max-height: 90px;
 }
 
 .medium div { padding: 30px; max-height: 120px; }
@@ -303,6 +338,7 @@ section[id] {
   .logos div {
     width: 100%;
     min-width: 0;
+    flex: 1 1 auto;
     max-height: none;
   }
 
