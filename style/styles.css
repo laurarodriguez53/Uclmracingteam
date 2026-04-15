@@ -288,6 +288,19 @@ body {
 .medium div { padding: 30px; max-height: 120px; }
 .small div { padding: 22px; max-height: 100px; }
 
+#footer{
+  text-align: center;
+  padding: 30px 20px;
+  width: 100%;
+}
+
+
+#footer-p {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
 /* FORM */
 input, textarea {
   width: 100%;
